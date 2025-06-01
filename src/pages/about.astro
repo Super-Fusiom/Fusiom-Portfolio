@@ -1,22 +1,28 @@
 ---
-
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-    <header>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-    </header>
-		<h1>About me</h1>
-        <h2>I'm switching to astro due to easy support of md files.</h2>
-        <p>The better I get, the nicer it would look</p>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <header>
+    <nav>
+      <Navigation />
+    </nav>
+  </header>
+
+  <body>
+    <h1>About me</h1>
+    <h2>I'm switching to astro due to easy support of md files.</h2>
+    <p>The better I get, the nicer it would look</p>
+  </body>
+  <Footer />
+
+
 </html>
